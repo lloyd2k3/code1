@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "styles/bootstrap-5.2.0-dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -97,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "865dc412-6472-4925-9868-404e0ad1741b"
   }
 }
