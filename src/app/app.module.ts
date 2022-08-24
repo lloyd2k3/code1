@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { CommonModule } from '@angular/common';
 import { RoutingModule } from './routing.module';
 import { MovieComponent } from './movie/movie.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MovieComponent } from './movie/movie.component';
     CommonModule,
     BrowserModule,
     RoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

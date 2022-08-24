@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, Routes } from '@angular/router';
+import { routes } from '../routing.module';
 
 @Component({
   selector: 'app-login',
@@ -10,16 +12,19 @@ export class LoginComponent implements OnInit {
   password = "";
   errorMsg = "";  
 
-  constructor(private auth: AuthService, private router: Router) { }
+constructor( private router: Router) { }
 
   ngOnInit(): void {
+
+  }
+  login(){
     if (this.username.trim().length === 0) {
       this.errorMsg = "Username is required";
     } else if (this.password.trim().length === 0) {
       this.errorMsg = "Password is required";
     } else {
       this.errorMsg = "";
-      let res = this.auth.login(this.username, this.password);
+      let res = 200;
       if (res === 200) {
         this.router.navigate(['home']);
       }
@@ -27,7 +32,5 @@ export class LoginComponent implements OnInit {
         this.errorMsg = "Invalid Credentials";
       }
     }
-
   }
-
 }
