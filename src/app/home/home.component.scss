@@ -1,0 +1,88 @@
+.home-container{
+    display: flex;
+    .all-video {
+        width: 75%;
+        min-height: calc(100vh - 80px);
+        border-right: 1px solid #fdc827;
+        padding: 20px 40px;
+        font-family: 'Tiro Bangla', serif;
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4 {
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left: 5px solid #f90;
+            padding-left: 10px;
+            }
+            .view-all {
+                color: #ff9900;
+                cursor: pointer;
+            }
+        }
+        .videos-thumbnail {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .video {
+                .cover{
+                    img{
+                        border-radius: 5px;
+                    }
+                }
+                .detail {
+                    width: 180px;
+                    .name {
+                        font-weight: bold;
+                        height: 50px;
+                        margin-top: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .popular-video {
+        width: 25%;
+        min-height: calc(100vh - 80px);
+        padding: 20px 40px;
+        font-family: 'Tiro Bangla', serif;
+        h4 {
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left: 5px solid #f90;
+            padding-left: 10px;
+            }
+        .videos {
+            .video {
+             margin-bottom: 20px;
+             margin-top: 30px;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             .name {
+                font-weight: bold;
+                cursor: pointer;
+             }
+            }
+            .view-all {
+              color: #ff9900;
+              cursor: pointer; 
+              text-align: right;
+              margin-top: 30px;
+            }
+            
+        }
+
+    }
+}
+.rating{
+    padding-right: 30px;
+    position: relative;
+    .rating-value {
+        position: absolute;
+        top: 10px;
+        right: 0px;
+        font-weight: bold;
+}}
