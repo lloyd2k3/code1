@@ -9,6 +9,8 @@ import { CommonModule } from '@angular/common';
 import { RoutingModule } from './routing.module';
 import { MovieComponent } from './movie/movie.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FeatureModule } from './feature/feature.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     BrowserModule,
     RoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    FeatureModule
   ],
   providers: [],
   bootstrap: [AppComponent]
